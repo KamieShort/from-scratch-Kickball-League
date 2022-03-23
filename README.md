@@ -4,7 +4,7 @@
 
 -Header with NAV Links to Home, Teams, Players OR add Nav links on each page
 
-## Views:
+## Views
 
 Home
 Teams --Nav Link and Router
