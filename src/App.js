@@ -2,6 +2,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Home from './views/Home/Home';
+import Teams from './views/Teams/Teams';
+import Players from './views/Players/Players';
 
 function App() {
   return (
@@ -12,12 +14,12 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route exact path="/teams">
+          <Route exact path="/teams">
             <Teams />
-          </Route> */}
-          {/* <Route exact path="/players">
+          </Route>
+          <Route exact path="/players">
             <Players />
-          </Route> */}
+          </Route>
         </Switch>
       </div>
     </BrowserRouter>
