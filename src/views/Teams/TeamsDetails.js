@@ -10,7 +10,7 @@ export default function TeamsDetails() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchTeamsById(params.id);
-      console.log(data);
+
       setTeamDeets(data);
     };
     fetchData();

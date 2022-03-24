@@ -9,6 +9,7 @@ export default function TeamsDetails() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchPlayersById(params.id);
+      console.log(data);
       setPlayerDeets(data);
     };
     fetchData();
@@ -17,9 +18,10 @@ export default function TeamsDetails() {
   return (
     <div>
       <h2>Player Details</h2>
-      <p>{playerdeets.name}</p>
-      <p>{playerdeets.position}</p>
-      <p>{playerdeets.state}</p>
+      <h3>{playerdeets.name}</h3>
+      <p>Plays {playerdeets.position}</p> for
+      <p>{playerdeets.teams.name}</p>
+      {/* <p>{team.name}</p> */}
     </div>
   );
 }
