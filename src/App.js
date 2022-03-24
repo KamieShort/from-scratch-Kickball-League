@@ -11,7 +11,7 @@ import background from './background.jpeg';
 function App() {
   return (
     <>
-      <div style={{ backgroundImage: `url(${background})` }}></div>
+      {/* <div style={{ backgroundImage: `url(${background})` }}> */}
       <BrowserRouter>
         <Header />
         <div className="App">

@@ -27,7 +27,7 @@ export default function TeamsDetails() {
       </p>
       {teamdeets.players.map((player) => (
         <div key={player.id}>
-          {player.position}: <Link to={`players/${player.id}`}>{player.name}</Link>
+          {player.position}: <Link to={`/players/${player.id}`}>{player.name}</Link>
         </div>
       ))}
     </div>

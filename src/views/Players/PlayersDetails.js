@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchPlayersById } from '../../services/fetchplayers';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function TeamsDetails() {
   const params = useParams();
@@ -22,7 +23,9 @@ export default function TeamsDetails() {
       <h2>Player Details</h2>
       <h3>{playerdeets.name}</h3>
       <p>Plays {playerdeets.position}</p> for
-      <p>{playerdeets.teams.name}</p>
+      <Link to={`/teams/${playerdeets.teams.id}`}>
+        <p>{playerdeets.teams.name}</p>
+      </Link>
     </div>
   );
 }
