@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './views/Home/Home';
 import Teams from './views/Teams/Teams';
 import Players from './views/Players/Players';
+import TeamsDetails from './views/Teams/TeamsDetails';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route exact path="/Teams">
             <Teams />
+          </Route>
+          <Route exact path="/Teams/:id">
+            <TeamsDetails />
           </Route>
           <Route exact path="/Players">
             <Players />
