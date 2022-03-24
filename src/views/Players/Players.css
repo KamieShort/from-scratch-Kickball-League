@@ -1,8 +1,9 @@
 .players {
-  margin-top: 10%;
+  margin-top: 7%;
   font-size: 25px;
   font-weight: bolder;
   color: white;
+  font-family: 'Permanent Marker', cursive;
 }
 
 a {

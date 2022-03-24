@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: row;
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   font-size: 55px;
   color: white;
