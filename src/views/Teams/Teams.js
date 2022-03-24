@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchTeams } from '../../services/fetchteams';
 import { Link } from 'react-router-dom';
+import './Teams.css';
 
 export default function Teams() {
   const [teams, setTeams] = useState([]);
@@ -15,7 +16,7 @@ export default function Teams() {
     fetchData();
   }, []);
   return (
-    <div>
+    <div className="teams">
       <h2>Teams</h2>
 
       {teams.map((team) => (

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchTeamsById } from '../../services/fetchteams';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './TeamsDetails.css';
 
 export default function TeamsDetails() {
   const params = useParams();
@@ -19,9 +20,9 @@ export default function TeamsDetails() {
   if (!teamdeets) return <div>...Loading</div>;
 
   return (
-    <div>
+    <div className="teamdeets">
       <h2>Team Details</h2>
-      <p>{teamdeets.name}</p>
+      <h3>{teamdeets.name}</h3>
       <p>
         {teamdeets.city}, {teamdeets.state}
       </p>

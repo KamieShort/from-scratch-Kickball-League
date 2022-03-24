@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchPlayersById } from '../../services/fetchplayers';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './PlayersDetails.css';
 
 export default function TeamsDetails() {
   const params = useParams();
@@ -19,7 +20,7 @@ export default function TeamsDetails() {
 
   if (!playerdeets) return <div>...Loading</div>;
   return (
-    <div>
+    <div className="playerdeets">
       <h2>Player Details</h2>
       <h3>{playerdeets.name}</h3>
       <p>Plays {playerdeets.position}</p> for

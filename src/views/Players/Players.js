@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchPlayers } from '../../services/fetchplayers';
 import { Link } from 'react-router-dom';
+import './Players.css';
 
 export default function Players() {
   const [players, setPlayers] = useState([]);
@@ -15,7 +16,7 @@ export default function Players() {
     fetchData();
   }, []);
   return (
-    <div>
+    <div className="players">
       <h2>Players</h2>
       {players.map((player) => (
         <div key={player.id} {...player}>

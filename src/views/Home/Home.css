@@ -1,4 +1,7 @@
 .home {
   text-align: center;
-  font-size: 35px;
+  font-size: 75px;
+  color: white;
+  margin-top: 15%;
+  background: cover;
 }
