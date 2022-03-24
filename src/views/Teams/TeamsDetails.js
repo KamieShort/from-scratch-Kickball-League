@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function TeamsDetails() {
   const params = useParams();
-  const [teamdeets, setTeamDeets] = useState({ players: [] });
+  const [teamdeets, setTeamDeets] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,6 +15,8 @@ export default function TeamsDetails() {
     };
     fetchData();
   }, [params.id]);
+
+  if (!teamdeets) return <div>...Loading</div>;
 
   return (
     <div>
