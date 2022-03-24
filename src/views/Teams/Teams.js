@@ -22,6 +22,7 @@ export default function Teams() {
         <div key={team.id} {...team}>
           <Link to={`/teams/${team.id}`}>
             <p>{team.name}</p>
+            {/* <p>{team.player}</p> */}
           </Link>
         </div>
       ))}
