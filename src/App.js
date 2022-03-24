@@ -14,10 +14,10 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/teams">
+          <Route exact path="/Teams">
             <Teams />
           </Route>
-          <Route exact path="/players">
+          <Route exact path="/Players">
             <Players />
           </Route>
         </Switch>
