@@ -1,25 +1,37 @@
-# Alchemy React Base Template
+# Kickball Plan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Components
 
-Use this template for all your "from scratch" deliverables. To start, simply run
+-Header with NAV Links to Home, Teams, Players OR add Nav links on each page
 
-- `npm install`
-- `npm start`
+## Views
 
-## Available Scripts
+Home
+Teams --Nav Link and Router
+Players --Nav Link and Router
 
-In the project directory, you can run:
+## Team View
 
-### `npm start`
+-Lists Teams with details on team and players on the team
+-fetch teams
+-fetch team by id (use supabase client)
+-have a teamdetails.js using params.id return player details
+-add in Router
+-add Nav Link back to Home???
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Player View
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-Lists Players with details on each player
+-fetch players
+-fetch players by id
+-have playersdetails.js using params.id return player details
+-add Nav Link back Home???
 
-### `npm test`
+## Rubric
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Team List View 4
+Team Detail View 4
+Player List View 4
+Player Detail View 4
+Routes 4
+Tests +2
